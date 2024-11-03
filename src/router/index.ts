@@ -4,9 +4,9 @@ import AboutView from '../views/AboutView.vue'
 import BlogView from '../views/BlogView.vue'
 import BlogPostView from '@/views/BlogPost.vue'
 import PrivacyPolicy from '@/views/PrivacyPolicy.vue'
-import Contact from '@/views/Contact.vue'
-import Category from '@/views/Category.vue'
-import Author from '@/views/Author.vue'
+import ContactPage from '@/views/ContactPage.vue'
+import CategoryPage from '@/views/CategoryPage.vue'
+import AuthorPage from '@/views/AuthorPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -39,17 +39,17 @@ const router = createRouter({
     {
       path: '/contact',
       name: 'contact',
-      component: Contact,
+      component: ContactPage,
     },
     {
       path: '/category',
       name: 'category',
-      component: Category,
+      component: CategoryPage,
     },
     {
       path: '/author',
       name: 'Author',
-      component: Author,
+      component: AuthorPage,
     },
     {
       path: '/blogpost',

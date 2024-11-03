@@ -68,7 +68,7 @@
   </section>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: 'CategorySelection',
   data() {
@@ -77,7 +77,7 @@ export default {
     };
   },
   methods: {
-    selectCategory(category) {
+    selectCategory(category: string) {  // Menambahkan tipe 'string' untuk parameter 'category'
       this.selectedCategory = category;
     }
   }
